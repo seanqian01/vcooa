@@ -1,10 +1,11 @@
 package routers
 
 import (
-	"vcooa/controllers"
 	"github.com/astaxie/beego"
+	"vcooa/controllers"
 )
 
 func init() {
-    beego.Router("/", &controllers.MainController{})
+	beego.Router("/", &controllers.LoginController{})
+	beego.Router("/admin", &controllers.MainController{})
 }

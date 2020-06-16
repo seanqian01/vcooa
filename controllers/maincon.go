@@ -8,8 +8,14 @@ type MainController struct {
 	beego.Controller
 }
 
+type LoginController struct {
+	beego.Controller
+}
+
 func (c *MainController) Get() {
-	c.Data["Website"] = ""
-	c.Data["Email"] = ""
 	c.TplName = "index.html"
+}
+
+func (c *LoginController) Get() {
+	c.TplName = "login.html"
 }
