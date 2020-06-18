@@ -19,3 +19,11 @@ func (c *MainController) Get() {
 func (c *LoginController) Get() {
 	c.TplName = "login.html"
 }
+
+type ComController struct {
+	beego.Controller
+}
+
+func (c *ComController) Get() {
+	c.TplName = "Merchant.html"
+}
